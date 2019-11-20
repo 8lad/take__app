@@ -1,0 +1,23 @@
+@mixin light {
+    font-family: "OpenSans-Light", sans-serif;
+}
+
+@mixin regular {
+    font-family: "OpenSans-Regular", sans-serif;
+}
+
+@mixin bold {
+    font-family: "OpenSans-Bold", sans-serif;
+}
+
+@mixin semibold {
+    font-family: "OpenSans-SemiBold", sans-serif;
+}
+
+@mixin extrabold {
+    font-family: "OpenSans-ExtraBold", sans-serif;
+}
+
+$text: #fff;
+$black: #222626;
+$grey: #959595;

@@ -1,4 +1,189 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+// start header
+.header {
+    position: relative;
+    &__inner {
+        position: absolute;
+        top: 60px;
+        img {
+            padding-left: 15px;
+            display: inline-block;
+        }
+    }
+}
+
+// end header
+// start main
+.main {
+    min-height: 950px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 110px;
+    &__content {
+        padding-left: 15px;
+        max-width: 480px;
+        color: $text;
+        &-title {
+            @include light;
+            font-size: 60px;
+        }
+        &-description {
+            @include regular;
+            font-size: 13px;
+            line-height: 23px;
+        }
+    }
+}
+
+// end main
+// start presentantion
+.presentation {
+    margin-bottom: 80px;
+}
+
+.presentation__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-img {
+        position: absolute;
+        right: -55px;
+        bottom: 210px;
+    }
+}
+
+.presentation__content {
+    width: 100%;
+    &-title {
+        display: inline-block;
+        color: $black;
+        @include light;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+    &-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @include regular;
+        color: $grey;
+        font-size: 14px;
+        line-height: 20px;
+        p {
+            max-width: 580px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+// end presentation
+// start preferences
+.preferences {
+    margin-bottom: 95px;
+    margin-right: 0;
+    margin-left: auto;
+    max-width: 1920px;
+    width: 100%;
+    &__inner {
+        margin-right: 0;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1535px;
+        width: 100%;
+    }
+}
+
+.preferences__box {
+    width: 25%;
+    @include regular;
+    color: $text;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 44px;
+    padding-right: 10px;
+    position: relative;
+    &-title {
+        @include light;
+        font-size: 30px;
+        margin-top: 45px;
+        margin-bottom: 17px;
+    }
+    &-text {
+        font-size: 13px;
+        line-height: 25px;
+        max-width: 305px;
+        margin-bottom: 25px;
+    }
+    &-link {
+        display: inline-block;
+        @include bold;
+        font-size: 14px;
+        color: $text;
+        margin-bottom: 50px;
+        max-width: 150px;
+        padding-right: 25px;
+        position: relative;
+        &::after {
+            content: "\f178";
+            font-family: 'icomoon';
+            position: absolute;
+            width: 13px;
+            height: 5px;
+            right: 0;
+            top: 2px;
+        }
+    }
+}
+
+.preferences__box.big-box {
+    width: 50%;
+}
+
+.preferences__box.last-box {
+    background-size: auto 100%;
+}
+
+.preferences__box-button {
+    position: absolute;
+    bottom: 44px;
+    right: 44px;
+    &::before {
+        content: "\f08a";
+        font-family: 'icomoon';
+        width: 18px;
+        height: 18px;
+        color: $text;
+    }
+}
+
+.color-pink {
+    background-color: #f5989d;
+}
+
+.color-eggplant {
+    background-color: #615f7d;
+}
+
+.color-lilac {
+    background-color: #bd8cbf;
+}
+
+.color-green {
+    background-color: #82ca9c;
+}
+
+// end preferences
 @import 'media';

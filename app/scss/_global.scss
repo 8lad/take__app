@@ -44,7 +44,14 @@ li {
 }
 
 .container {
+    margin: 0 auto;
     padding: 0px 15px;
+    max-width: 1200px;
+    width: 100%;
 }
 
-.container-fluide {}
+.container-fluid {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1830px;
+}
