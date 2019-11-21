@@ -55,3 +55,11 @@ li {
     padding: 0 15px;
     max-width: 1830px;
 }
+
+.section__title {
+    @include light;
+    font-size: 35px;
+    max-width: 500px;
+    margin-bottom: 55px;
+    text-align: left;
+}
