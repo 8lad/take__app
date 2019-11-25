@@ -390,4 +390,113 @@
 }
 
 // end cards 
+// start footer
+.footer {
+    background-color: #192431;
+    min-height: 605px;
+    display: flex;
+    align-items: center;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: $text;
+        a {
+            color: $text;
+        }
+    }
+}
+
+.footer__feedback,
+.footer__form {
+    width: 50%;
+}
+
+.footer__feedback {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 575px;
+}
+
+.footer__feedback-description {
+    margin-bottom: 70px;
+}
+
+.footer__description-title,
+.footer__links-title {
+    @include semibold;
+    font-size: 13px;
+    margin-bottom: 26px;
+}
+
+.footer__description-text {
+    @include regular;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.footer__feedback-links {
+    display: block;
+    width: 33.33%;
+    @include regular;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.footer__form {
+    padding-left: 100px;
+    form {
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    label {
+        display: block;
+        width: 100%;
+        @include semibold;
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 26px;
+    }
+    input {
+        height: 61px;
+        max-width: 405px;
+        width: 100%;
+        background-color: #f6f7fa;
+        border-radius: 3px 0px 0px 3px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 26px;
+        margin-right: 0;
+    }
+    button {
+        height: 61px;
+        margin-left: 0;
+        border: none;
+        outline: none;
+        background-color: $green;
+        border-radius: 0px 3px 3px 0px;
+        width: 100%;
+        max-width: 70px;
+        &::before {
+            content: "\f00c";
+            font-family: 'icomoon';
+            color: $text;
+            font-size: 30px;
+        }
+    }
+}
+
+.footer__form-text {
+    max-width: 345px;
+    @include regular;
+    font-size: 12px;
+    line-height: 18px;
+    color: #364455;
+}
+
+// end footer
 @import 'media';
