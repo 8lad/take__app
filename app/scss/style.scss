@@ -297,4 +297,97 @@
 }
 
 // end reasons
+// start cards
+.cards {
+    background-color: #f6f7fa;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.cards__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 45px 40px 45px 55px;
+    transition: all .5s;
+    &:hover {
+        background-color: $text;
+        box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.75);
+        .cards__item-popularity {
+            background-color: #bd8cbf;
+            color: #fff;
+        }
+    }
+    &-popularity {
+        padding: 6px 16px;
+        background-color: #e1e1e1;
+        @include extrabold;
+        font-size: 11px;
+        color: #fdfdfd;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        transition: all .5s;
+    }
+    &-title {
+        @include light;
+        font-size: 30px;
+        line-height: 40px;
+        color: #2e3b4e;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    &-text {
+        @include regular;
+        font-size: 14px;
+        line-height: 25px;
+        color: #8297a7;
+        max-width: 480px;
+        margin-bottom: 25px;
+    }
+    &-btn {
+        background-color: $green;
+        color: $text;
+        @include bold;
+        font-size: 12px;
+        line-height: 22px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        max-width: 270px;
+        text-transform: uppercase;
+        padding: 14px 28px;
+        margin-bottom: 20px;
+    }
+}
+
+.cards__item-links {
+    width: 100%;
+}
+
+.cards__item-apple {
+    margin-right: 15px;
+    &::before {
+        font-family: 'icomoon';
+        content: "\f179";
+        color: #c5c5c5;
+        font-size: 24px;
+    }
+}
+
+.cards__item-win {
+    &::before {
+        font-family: 'icomoon';
+        content: "\f17a";
+        color: #c5c5c5;
+        font-size: 24px;
+    }
+}
+
+// end cards 
 @import 'media';
