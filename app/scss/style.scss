@@ -149,6 +149,17 @@
 
 .preferences__box.big-box {
     width: 50%;
+    transition: all .7s;
+    &:hover {
+        background-image: url(../images/mountains-man.jpg) !important;
+    }
+}
+
+.preferences__box.new-background {
+    transition: all .7s;
+    &:hover {
+        background-image: url(../images/two-trees.jpg) !important;
+    }
 }
 
 .preferences__box.last-box {
@@ -239,7 +250,7 @@
     }
     &-text {
         @include regular;
-        flex: 13;
+        font-size: 13;
         line-height: 33px;
         margin-bottom: 23px;
     }
@@ -469,6 +480,7 @@
         outline: none;
         padding-left: 10px;
         padding-right: 10px;
+        @include regular;
         font-size: 26px;
         margin-right: 0;
     }
