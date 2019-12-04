@@ -21,6 +21,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -234,6 +235,7 @@
     min-height: 885px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: flex-start;
     align-items: center;

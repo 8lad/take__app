@@ -109,6 +109,10 @@
 }
 
 @media(max-width: 1152px) {
+    .main,
+    .power {
+        background-attachment: scroll;
+    }
     .header__inner img {
         padding-left: 40px;
     }
